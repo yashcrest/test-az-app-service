@@ -14,7 +14,7 @@ app.get("/api", (req, res) => {
   res.json("this api is running");
 });
 
-app.get("/test", (req, res) => {
+app.get("/test123", (req, res) => {
   res.sendFile(path.join(__dirname, "public", "index.html"));
 });
 
