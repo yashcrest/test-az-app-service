@@ -18,6 +18,10 @@ app.get("/test", (req, res) => {
   res.sendFile(path.join(__dirname, "public", "index.html"));
 });
 
+app.get("/air", (req, res) => {
+  res.json({ message: "this route was declared from macbook air." });
+});
+
 app.listen(port, () => {
   console.log(`server running on port ${port}`);
 });
