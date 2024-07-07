@@ -2,7 +2,7 @@ import express from "express";
 
 const app = express();
 
-app.get("/", (res, res) => {
+app.get("/", (req, res) => {
   res.json("this api is running");
 });
 
