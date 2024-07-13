@@ -11,7 +11,9 @@ const port = process.env.PORT || 3000;
 app.use(express.static("public"));
 
 app.get("/api", (req, res) => {
-  res.json("this api is running");
+  res.json({
+    message: "this api is running",
+  });
 });
 
 app.get("/test123", (req, res) => {
